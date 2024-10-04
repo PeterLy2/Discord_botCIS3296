@@ -1,7 +1,9 @@
 import discord
-from dotenv import load_dotenv
-import os
 from discord.ext import commands
+
+import os
+from dotenv import load_dotenv
+
 
 
 intents = discord.Intents.default()
@@ -20,5 +22,5 @@ async def ping(ctx):
     await ctx.send('Pong!')
 
 
-load_dotenv('tokenDis')
+load_dotenv('tokenDis.env')
 bot.run(os.getenv('DISCORD_BOT_TOKEN'))
