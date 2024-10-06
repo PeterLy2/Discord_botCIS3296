@@ -19,7 +19,7 @@ async def on_ready():
 
 @bot.command()
 async def ping(ctx):
-    await ctx.send('Pong!')
+    await ctx.send('Hello We are the Task Manager Discord Bot!')
 
 
 load_dotenv('tokenDis.env')
